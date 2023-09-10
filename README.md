@@ -3,7 +3,7 @@
 Provide your bot credentials to TelegramHandler:
 
 ```python
-from telegram_logging_handler import TelegramHandler
+from src.telegram_logging_handler import TelegramHandler
 
 telegram_handler = TelegramHandler(
     api_token="api_token",
@@ -14,7 +14,7 @@ telegram_handler = TelegramHandler(
 For multiple chats you can provide a list of chat ids:
 
 ```python
-from telegram_logging_handler import TelegramHandler
+from src.telegram_logging_handler import TelegramHandler
 
 telegram_handler = TelegramHandler(
     api_token="api_token",
@@ -27,7 +27,7 @@ Use it with standard logging package:
 ```python
 import logging
 
-from telegram_logging_handler import TelegramHandler
+from src.telegram_logging_handler import TelegramHandler
 
 logger = logging.getLogger('my_logger')
 telegram_handler = TelegramHandler(
