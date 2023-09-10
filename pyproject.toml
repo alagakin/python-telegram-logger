@@ -1,10 +1,10 @@
 [build-system]
-requires = ["hatchling", "requests"]
+requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
 name = "telegram_logging_handler"
-version = "0.0.1"
+version = "0.0.5"
 authors = [
     { name = "Alexandr Agakin", email = "agakinalexnadr@gmail.com" },
 ]
@@ -16,7 +16,9 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
-
+dependencies = [
+    "requests>=2.31"
+]
 [project.urls]
 "Homepage" = "https://github.com/alagakin/telegram_logging_handler"
 "Bug Tracker" = "https://github.com/alagakin/telegram_logging_handler/issues"
